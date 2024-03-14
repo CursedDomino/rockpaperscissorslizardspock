@@ -1,7 +1,7 @@
-import symbol
-class Paper(symbol.Symbol):
+import sign
+class Paper(sign.Sign):
     def __init__(self):
-        symbol.Symbol.__init__(self)
+        sign.Sign.__init__(self)
         self.defeats = ['Rock', 'Spock']
         self.defeated_by = ['Scissors', 'Lizard']
         self.draws = ['Paper']
