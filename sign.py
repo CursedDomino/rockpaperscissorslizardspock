@@ -1,4 +1,4 @@
-class Symbol():
+class Sign():
     def __init__(self):
         self.defeats = []
         self.defeated_by = []
