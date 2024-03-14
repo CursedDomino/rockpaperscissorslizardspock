@@ -1,1 +1,19 @@
-Update to add text later.
+Symbols:
+
+Rock (Defeats Scissors and Lizard --- Defeated by Paper and Spock)
+Paper (Defeats Rock and Spock --- Defeated by Scissors and Lizard)
+Scissors (Defeats Paper and Lizard --- Defeated by Rock and Spock)
+Lizard (Defeats Paper and Spock --- Defeated by Rock and Scissors)
+Spock (Defeats Rock and Scissors --- Defeated by Paper and Lizard)
+
+To Do:
+
+Import everything to it's right place (symbol.py to each of the symbol files, each of the symbol files to main.py).
+Make each of the symbols a subclass of the Symbol class.
+Figure out and implement a way for the player to choose a symbol.
+Write the code for the game in main.py
+
+Ideas:
+
+Write special phrases for each match (i.e., "Scissors has sliced through Paper, Player Wins!")
+Figure out a way to make the computer opponent choose symbols based on past rounds (maybe).
