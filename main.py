@@ -1,4 +1,7 @@
-while True:
+while play_again == True:
+    player = 'None'
+    computer = 'None'
+    play_again = True
 
     # Start Game
     # Explain Rules
