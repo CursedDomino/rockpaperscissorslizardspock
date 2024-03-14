@@ -52,17 +52,18 @@ while play_again.upper() == 'Y':
                 continue
 
     # Computer Chooses Symbol
+    # Implement Classes Here Later
     computer = random.randint(1,5)
     if computer == 1:
-        pass
+        computer = 'Rock'
     elif computer == 2:
-        pass
+        computer = 'Paper'
     elif computer == 3:
-        pass
+        computer = 'Scissors'
     elif computer == 4:
-        pass
+        computer = 'Lizard'
     elif computer == 5:
-        pass
+        computer = 'Spock'
 
     # Player Chooses Symbol
     # Show Symbols and Declare Winner
