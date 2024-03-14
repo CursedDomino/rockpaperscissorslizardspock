@@ -15,12 +15,6 @@ while play_again.upper() == 'Y':
     play_again = 'Y'
     explain = 'N'
 
-    # Rock (Defeats Scissors and Lizard --- Defeated by Paper and Spock)
-    # Paper (Defeats Rock and Spock --- Defeated by Scissors and Lizard)
-    # Scissors (Defeats Paper and Lizard --- Defeated by Rock and Spock)
-    # Lizard (Defeats Paper and Spock --- Defeated by Rock and Scissors)
-    # Spock (Defeats Rock and Scissors --- Defeated by Paper and Lizard)
-
     # Rules Explained
     while True:
         explain = input('Would you like an explanation of the rules? Y/N')
@@ -37,6 +31,7 @@ while play_again.upper() == 'Y':
                         print('Scissors (Defeats Paper and Lizard --- Defeated by Rock and Spock)')
                         print('Lizard (Defeats Paper and Spock --- Defeated by Rock and Scissors)')
                         print('Spock (Defeats Rock and Scissors --- Defeated by Paper and Lizard)')
+                        break
                     elif explain.upper == 'N':
                         print('The game will now begin. Good luck!')
                         break
@@ -52,18 +47,17 @@ while play_again.upper() == 'Y':
                 continue
 
     # Computer Chooses Symbol
-    # Implement Classes Here Later
     computer = random.randint(1,5)
     if computer == 1:
-        computer = 'Rock'
+        computer = rock.Rock
     elif computer == 2:
-        computer = 'Paper'
+        computer = paper.Paper
     elif computer == 3:
-        computer = 'Scissors'
+        computer = scissors.Scissors
     elif computer == 4:
-        computer = 'Lizard'
+        computer = lizard.Lizard
     elif computer == 5:
-        computer = 'Spock'
+        computer = spock.Spock
 
     # Player Chooses Symbol
     # Show Symbols and Declare Winner
