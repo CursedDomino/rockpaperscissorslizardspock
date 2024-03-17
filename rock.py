@@ -1,8 +1,7 @@
 import sign
 class Rock(sign.Sign):
-    def __init__(self):
+    def __init__(self, defeats, defeated_by, draws):
         sign.Sign.__init__(self)
-        self.defeats = ['Scissors', 'Lizard']
-        self.defeated_by = ['Paper', 'Spock']
-        self.draws = ['Rock']
-
+        self.defeats = defeats
+        self.defeated_by = defeated_by
+        self.draws = draws

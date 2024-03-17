@@ -5,9 +5,9 @@ class Sign():
         self.draws = []
 
     def determine_winner(self, cpu_symbol):
-        if cpu_symbol in self.defeats:
-            return 'Win'
-        elif cpu_symbol in self.defeated_by:
-            return 'Lose'
+        if cpu_symbol.draws[0] in self.defeats:
+            return 'The Player Wins!'
+        elif cpu_symbol.draws[0] in self.defeated_by:
+            return 'The Computer Wins!'
         else:
-            return 'Draw'
+            return 'A Draw!'
