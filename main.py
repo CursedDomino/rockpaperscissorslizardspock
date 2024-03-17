@@ -20,7 +20,7 @@ while play_again.upper() == 'Y':
         explain = input('Would you like an explanation of the rules? Y/N: ')
         if explain.upper() == 'Y':
             print('')
-            print('Rules')
+            print('Rules:')
             print('The rules of the game are simple. Similar to rock paper scissors, you just have to choose a symbol to throw out.')
             print('Each symbol is weak to two and strong against two. If you throw out a symbol that is strong against your opponents, you win.')
             print('If you throw out a symbol that is weak against your opponents, you lose. If you throw out the same symbol, you draw. \n')
@@ -53,6 +53,26 @@ while play_again.upper() == 'Y':
 
     # Player Chooses Symbol
     
+    while True:
+        print('')
+        player = input('Choose Your Symbol: Rock, Paper, Scissors, Lizard, Spock (Capitalization Does Not Matter) ').upper()
+        if player == 'ROCK':
+            player = rock.Rock(['Scissors', 'Lizard'], ['Paper', 'Spock'], ['Rock'])
+            break
+        elif player == 'PAPER':
+            player = paper.Paper(['Rock', 'Spock'], ['Scissors', 'Lizard'], ['Paper'])
+            break
+        elif player == 'SCISSORS':
+            scissors.Scissors(['Paper', 'Lizard'], ['Rock', 'Spock'], ['Scissors'])
+            break
+        elif player == 'LIZARD':
+            player = lizard.Lizard(['Spock', 'Paper'], ['Rock', 'Scissors'], ['Lizard'])
+            break
+        elif player == 'SPOCK':
+            player = spock.Spock(['Scissors', 'Rock'], ['Paper', 'Lizard'], ['Spock'])
+            break
+        else:
+            print('Unexpected response. Please try again.')
 
     # Show Symbols and Declare Winner
     print('')
@@ -67,10 +87,10 @@ while play_again.upper() == 'Y':
         x = input('Would you like to play again? Y/N: ')
 
         if x.upper() == 'Y':
-            print('Restarting...Good Luck!')
+            print('Restarting...Good Luck! \n')
             while_loop = False
         elif x.upper() == 'N':
-            print('Thanks for playing!')
+            print('Thanks for playing! \n')
             while_loop = False
             play_again = 'N'
         else:
