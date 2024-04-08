@@ -10,14 +10,14 @@ class Paper(sign.Sign):
         if self.determine_winner(cpu_symbol) == 'The Player Wins!':
             if cpu_symbol.draws[0] == 'Rock':
                 print('''You never stood a chance. No one can match my wit.''')
-                print("Paper(Player) has covered Rock(Computer) Player Wins!")
+                print("Paper(Player) has covered Rock(Computer). The Player Wins!")
             else:
                 print('''You never stood a chance. No one can match my wit.''')
-                print("Paper(Player) has disproven Spock(Computer) Player Wins!")
+                print("Paper(Player) has disproven Spock(Computer). The Player Wins!")
         elif self.determine_winner(cpu_symbol) == 'The Computer Wins!':
             if self.draws[0] == 'Rock':
                 print('''You never stood a chance. No one can match my wit.''')
-                print("Paper(Computer) has covered Rock(Player) Player Wins!")
+                print("Paper(Computer) has covered Rock(Player). The Computer Wins!")
             else:
                 print('''You never stood a chance. No one can match my wit.''')
-                print("Paper(Computer) has disproven Spock(Player) Player Wins!")
+                print("Paper(Computer) has disproven Spock(Player). The Computer Wins!")
