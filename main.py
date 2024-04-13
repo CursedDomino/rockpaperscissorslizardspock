@@ -46,7 +46,7 @@ while play_again.upper() == 'Y':
     # Computer Chooses Symbol
 
     # computer = random.randint(1,5)
-    computer = 3
+    computer = 1
     if computer == 1:
         computer = rock.Rock(['Scissors', 'Lizard'], ['Paper', 'Spock'], ['Rock'])
     elif computer == 2:
@@ -83,7 +83,7 @@ while play_again.upper() == 'Y':
     # Show Symbols and Declare Winner
     print('')
     print(f'. . . And the result is . . . ')
-    print(f'{player.winning_line(computer)}')
+    player.winning_line(computer)
     print('')
     # "Play Again" or "Quit": Perform Appropriate Action
     while_loop = True
