@@ -9,18 +9,26 @@ class Lizard(sign.Sign):
     def winning_line(self, cpu_symbol):
         if self.determine_winner(cpu_symbol) == 'The Player Wins!':
             if cpu_symbol.draws[0] == 'Paper':
-                print('''This was fun! You made for a pretty good snack!''')
+                print('''"Lots of big words..no strength..lost focus. You made for a good snack."''')
                 print("Lizard(Player) has eaten Paper(Computer). The Player Wins!")
             else:
-                print('''This was fun! You'll make for a pretty good snack later!''')
+                print('''"Futuristic..strange. My poison was..very effective."''')
                 print("Lizard(Player) has poisoned Spock(Computer). The Player Wins!")
         elif self.determine_winner(cpu_symbol) == 'The Computer Wins!':
-            if self.draws[0] == 'Paper':
-                print('''This was fun! You made for a pretty good snack!''')
-                print("Lizard(Computer) has eaten Paper(Player). The Computer Wins!")
+            if cpu_symbol.draws[0] == 'Rock':
+                print('''"Your abilities are no match for my strength! You've been crushed!"''')
+                print("Rock(Computer) has crushed Lizard(Player). The Computer Wins!")
             else:
-                print('''This was fun! You'll make for a pretty good snack later!''')
-                print("Lizard(Computer) has poisoned Spock(Player). The Computer Wins!")
+                print('''"I won't become your snack today. You made for good aiming practice."''')
+                print("Scissors(Computer) has decapitated Lizard(Player). The Computer Wins!")
         else:
-            print('''Haha! That was fun! Again, again!''')
+            print('''"Another..me? Evenly matched..it seems."''')
             print('''Both players chose Lizard. It's a draw!''')
+
+
+# if self.draws[0] == 'Paper':
+#                 print('''This was fun! You made for a pretty good snack!''')
+#                 print("Lizard(Computer) has eaten Paper(Player). The Computer Wins!")
+#             else:
+#                 print('''This was fun! You'll make for a pretty good snack later!''')
+#                 print("Lizard(Computer) has poisoned Spock(Player). The Computer Wins!")

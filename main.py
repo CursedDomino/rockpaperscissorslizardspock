@@ -10,6 +10,10 @@ import random
 play_again = 'Y'
 skip = False
 
+player_score = 0
+cpu_score = 0
+draws = 0
+
 
 while play_again.upper() == 'Y':
     player = 'None'
@@ -45,8 +49,7 @@ while play_again.upper() == 'Y':
 
     # Computer Chooses Symbol
 
-    # computer = random.randint(1,5)
-    computer = 1
+    computer = random.randint(1,5)
     if computer == 1:
         computer = rock.Rock(['Scissors', 'Lizard'], ['Paper', 'Spock'], ['Rock'])
     elif computer == 2:
@@ -87,6 +90,16 @@ while play_again.upper() == 'Y':
     print('')
     # "Play Again" or "Quit": Perform Appropriate Action
     while_loop = True
+
+    if player.determine_winner(computer) == 'The Player Wins!':
+        player_score +=1
+    elif player.determine_winner(computer) == 'The Computer Wins!':
+        cpu_score += 1
+    else:
+        draws +=1
+
+    print('Scoreboard:')
+    print(f'Player Victories: {player_score} \nComputer Victories: {cpu_score} \nDraws: {draws} \n')
 
     while while_loop == True:
 

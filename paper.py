@@ -9,18 +9,25 @@ class Paper(sign.Sign):
     def winning_line(self, cpu_symbol):
         if self.determine_winner(cpu_symbol) == 'The Player Wins!':
             if cpu_symbol.draws[0] == 'Rock':
-                print('''You never stood a chance. No one can match my wit.''')
+                print('''"You may be strong, but your strategy is lacking. You were outmatched."''')
                 print("Paper(Player) has covered Rock(Computer). The Player Wins!")
             else:
-                print('''You never stood a chance. No one can match my wit.''')
+                print('''"I was expecting more from you. It seems you have a lot to learn."''')
                 print("Paper(Player) has disproven Spock(Computer). The Player Wins!")
         elif self.determine_winner(cpu_symbol) == 'The Computer Wins!':
-            if self.draws[0] == 'Rock':
-                print('''You never stood a chance. No one can match my wit.''')
-                print("Paper(Computer) has covered Rock(Player). The Computer Wins!")
+            if cpu_symbol.draws[0] == 'Scissors':
+                print('''"You fought smart, but your wit was no match for my skill in the blade."''')
+                print("Scissors(Computer) has sliced Paper(Player). The Computer Wins!")
             else:
-                print('''You never stood a chance. No one can match my wit.''')
-                print("Paper(Computer) has disproven Spock(Player). The Computer Wins!")
+                print('''"Lots of big words, no strength, lost focus. You made for a good snack."''')
+                print("Lizard(Computer) has eaten Paper(Player). The Computer Wins!")
         else:
-            print('''At long last. I've been looking for someone who could rival my intellect.''')
+            print('''"At long last. I've been looking for someone who could rival my intellect."''')
             print('''Both players chose Paper. It's a draw!''')
+
+    # if self.draws[0] == 'Rock':
+    #             print('''You never stood a chance. No one can match my wit.''')
+    #             print("Paper(Computer) has covered Rock(Player). The Computer Wins!")
+    #         else:
+    #             print('''You never stood a chance. No one can match my wit.''')
+    #             print("Paper(Computer) has disproven Spock(Player). The Computer Wins!")
