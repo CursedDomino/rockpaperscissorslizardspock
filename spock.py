@@ -24,10 +24,3 @@ class Spock(sign.Sign):
         else:
             print('''"Ah, so there was some talent among this galaxy after all."''')
             print('''Both players chose Spock. It's a draw!''')
-
-    # if cpu_symbol.draws[0] == 'Rock':
-    #             print('''Hmph. You're too modern for me. I'm in a whole different universe than you.''')
-    #             print("Spock(Computer) has vaporized Rock(Player). The Computer Wins!")
-    #         else:
-    #             print('''Hmph. You're too modern for me. I'm in a whole different universe than you.''')
-    #             print("Spock(Computer) has smashed Scissors(Player). The Computer Wins!")

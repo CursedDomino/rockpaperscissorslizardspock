@@ -24,10 +24,3 @@ class Paper(sign.Sign):
         else:
             print('''"At long last. I've been looking for someone who could rival my intellect."''')
             print('''Both players chose Paper. It's a draw!''')
-
-    # if self.draws[0] == 'Rock':
-    #             print('''You never stood a chance. No one can match my wit.''')
-    #             print("Paper(Computer) has covered Rock(Player). The Computer Wins!")
-    #         else:
-    #             print('''You never stood a chance. No one can match my wit.''')
-    #             print("Paper(Computer) has disproven Spock(Player). The Computer Wins!")

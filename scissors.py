@@ -24,10 +24,3 @@ class Scissors(sign.Sign):
         else:
             print('''"Impressive. You truly know how to wield a blade."''')
             print('''Both players chose Scissors. It's a draw!''')
-
-    # if self.draws[0] == 'Paper':
-    #             print('''Sliced and diced. My blades can cut through anything.''')
-    #             print("Scissors(Computer) has sliced Paper(Player). The Computer Wins!")
-    #         else:
-    #             print('''It was over before it began. My blades can cut through anything.''')
-    #             print("Scissors(Computer) has decapitated Lizard(Player). The Computer Wins!")

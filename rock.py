@@ -24,10 +24,3 @@ class Rock(sign.Sign):
         else:
             print('''"Not bad! It seems we're evenly matched."''')
             print('''Both players chose Rock. It's a draw!''')
-
-    # if self.draws[0] == 'Scissors':
-    #             print('''"You've been crushed. You're finished."''')
-    #             print("Rock(Computer) has crushed Scissors(Player). The Computer Wins!")
-    #         else:
-    #             print('''"You've been crushed. You're finished."''')
-    #             print("Rock(Computer) has crushed Lizard(Player). The Computer Wins!")

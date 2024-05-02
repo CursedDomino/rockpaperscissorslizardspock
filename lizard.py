@@ -24,11 +24,3 @@ class Lizard(sign.Sign):
         else:
             print('''"Another..me? Evenly matched..it seems."''')
             print('''Both players chose Lizard. It's a draw!''')
-
-
-# if self.draws[0] == 'Paper':
-#                 print('''This was fun! You made for a pretty good snack!''')
-#                 print("Lizard(Computer) has eaten Paper(Player). The Computer Wins!")
-#             else:
-#                 print('''This was fun! You'll make for a pretty good snack later!''')
-#                 print("Lizard(Computer) has poisoned Spock(Player). The Computer Wins!")
